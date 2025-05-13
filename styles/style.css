@@ -1,5 +1,390 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: var(--font-main);
+  font-size: var(--font-size-base);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: var(--line-height-text);
+}
+
+.page__container {
+  gap: 80px;
+  padding-inline: 10px;
+  max-width: 375px;
+  margin: 0 auto;
+  display: grid;
+  min-height: 100vh;
+  min-height: 668px;
+}
+
+.header {
+    display: grid;
+    /*position: relative;*/
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr min-content 1fr; 
+    /*min-height: 100vh;*/
+    /*min-height: 668px;*/
+    width: 100%;
+  }
+
+.header__theme-menu {
+  grid-row: 1;
+  justify-self: end;
+  margin-top: 40px;
+}
+
+ .header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--accent-color);
+  margin: 10px;
+ }
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: none;
+}
+
+.header__theme-menu-button_type_dark {
+  border: 1px solid var(--accent-color);
+}
+
+.title {
+  grid-row: 2;
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: bold;
+  --line-height: 82.5%;
+  line-height: var(--line-height);
+  color: var(--secondary-text);
+  text-shadow: var(--title-shadow);
+}
+
+.pharagraph {
+  height: min-content;
+  align-self: end;
+  grid-row: 3;
+  color: black;
+  font-weight: bold;
+}
+
+.decoration-text {
+  position: absolute;
+  top: 13px;
+  right: 36px;
+  justify-self: end;
+  color: var(--accent-color); 
+  /*grid-row: 1;*/
+  align-self: start;
+  justify-self: end; 
+}
+
+
+.decoration-text::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: -20px;
+  width: 9px;
+  height: 9px;
+  border-radius: 100px;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px 2px var(--accent-color);
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  bottom: -45px;
+  left: 3px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.text_attention {
+  font-weight: var(--font-weight-base);
+}
+
+.title_block {
+  font-size: var(--font-main);
+}
+
+.title_decor {
+  background-color: var(--accent-color);
+  color: black;
+}
+
+.title_accent {
+  color: var(--accent-color);
+}
+
+.attention_block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.list_attention {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item_attention {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.title_item {
+  font-weight: 400;
+}
+
+.image-gallery_container {
+  display: grid;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image_sunset {
+  width: 355px;
+  height: 142px;
+}
+
+.image_ice-cream {
+  width: 355px;
+  height: 355px;
+}
+
+.image_tape {
+  width: 355px;
+  height: 237px;
+}
+
+.image_books {
+  width: 355px;
+  height: 355px;
+}
+
+.image_street {
+  width: 355px;
+  height: 237px;
+}
+
+.footer {
+  min-height: 668px;
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (width >= 768px) {
+
+  .page__container {
+    padding-inline: 20px;
+    max-width: 768px;
+    }
+
+  .header {
+    min-height: 1024px;
+    /*min-height: 100%;*/
+  }
+  
+  .content_container {
+    display: grid;
+    gap: 167px;
+  }
+
+  .title {
+    font-size: clamp(7.5rem, 10vw, 9rem);
+  }
+
+  .header__theme-menu-list {
+    margin-top: 146px;
+  }
+
+  .pharagraph {
+    width: 50%;
+    justify-self: end; 
+    align-self: center;
+  }
+
+  .decorated-zone::after {
+    bottom: 15px;
+  }
+
+  .why-focus-hard {
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+
+  .list_attention {
+    display: flex;
+  }
+
+  .title_why-focus-hard {
+    max-width: 236px;
+  }
+
+  .title_attention_problems {
+    width: 236px;
+  }
+
+  .attention_tips {
+    display: grid;
+    grid-template-columns: min-content 1fr; 
+  }
+
+  .title_attention-tips {
+    grid-column: 1;
+    width: 236px;
+  }
+
+  .subtitle_attention-tips,
+  .list_attention_container {
+    grid-column: 2;
+  }
+  
+  .subtitle_attention-tips {
+  align-self: start;
+  min-height: min-content;
+  }
+
+  .image-gallery_container {
+    width: 100;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  .image {
+    height: 100%;
+    width: 100%;
+  }
+
+  .image_sunset {
+    grid-column: 1 / span 2;
+  }
+
+  .image_ice-cream {
+    grid-row: span 2;
+    object-fit: cover;
+
+  }
+
+  .image_tape {
+    grid-row: 2 / span 2;
+    object-fit: cover;
+  }
+
+  .image_street {
+    grid-column: 2 / span 2;
+    object-fit: cover;
+  }
+}
+
+@media (width >= 1024px) {
+
+  .page__container {
+  padding-inline: 20px;
+  max-width: 1024px;
+  }
+
+  .header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: start; 
+    position: relative; 
+  }
+
+  .header__theme-menu {
+      grid-row: 1;
+      justify-self: center;
+      align-self: start; 
+      margin-top: 0;
+      width: 100%; 
+  }
+
+  .header__theme-menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .decoration-text {
+    top: 23px;
+  }
+
+  .decorated-zone::before {
+    top: 23px;
+  }
+
+  .decoration-text::after {
+    top: 9px;
+    right: -22px;
+  }
+ 
+  .title {
+    font-size: 157px;
+  }
+
+  .title_why-focus-hard {
+    min-width: 315px;
+  }
+ 
+  .attention_problems {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .list_attention_attention_problems {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    }
+  
+  .title_attention_problems {
+    min-width: 315px;
+  }
+
+  .title_attention-tips {
+    min-width: 315px;
+  }
+
+  .image-gallery_container {
+    width: 100%;
+  }
+
+  .image-gallery {
+    width: 100%;
+  }
+  
 }

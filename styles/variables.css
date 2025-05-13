@@ -2,3 +2,19 @@
   Переменные для вашего проекта
   и их переопределение под различные устройства
 */
+
+/* Темная тема - основная */
+:root {
+  --accent-color: #FF0070;
+  --bg-color: #000028;
+  --bg-image: url("../images/cover-image-dark.png");
+  --text-color: #fff;
+  --secondary-text: #DB00FF;
+  --accent-color-text: #FF0070;
+  --font-main: 'IBM Plex mono', sans-serif;
+  --font-size-base: 18px;
+  --font-weight-base: 400;
+  --text-shadow: 2px 2px 0 #FF0070;
+  --title-shadow: 4px 4px 0 #FF0070;
+  --line-height-text: 23.4px;
+}
