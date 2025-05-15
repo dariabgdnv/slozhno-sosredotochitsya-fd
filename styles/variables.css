@@ -12,9 +12,10 @@
   --secondary-text: #DB00FF;
   --accent-color-text: #FF0070;
   --font-main: 'IBM Plex mono', sans-serif;
-  --font-size-base: 18px;
+  --font-size-base: clamp(1, 125rem, 1, 125rem + 0vw, 1, 125rem);
   --font-weight-base: 400;
-  --text-shadow: 2px 2px 0 #FF0070;
+  --link-shadow: 2px 2px 0 #FF0070;
   --title-shadow: 4px 4px 0 #FF0070;
   --line-height-text: 23.4px;
+  --letter-spacing_main: 1.2px;
 }
