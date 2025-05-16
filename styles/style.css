@@ -8,11 +8,12 @@
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: var(--line-height-text);
+  background-attachment: fixed;
 }
 
 .page__container {
   position: relative;
-  gap: 60px;
+  gap: 40px;
   padding-inline: 10px;
   min-width: 375px;
   margin: 0 auto;
@@ -54,7 +55,8 @@
   flex-direction: column;
   gap: 10px;
   color: var(--accent-color);
-  margin: 10px;
+  margin-right: 10px;
+  margin-top: 33px;
 }
 
 .header__theme-menu-button {
@@ -94,15 +96,15 @@
   grid-row: 3;
   color: black;
   font-weight: bold;
+  line-height: 140%;
 }
 
 .decoration-text {
   position: absolute;
-  top: 13px;
-  right: 36px;
+  top: 11px;
+  right: 30px;
   justify-self: end;
   color: var(--accent-color);
-  /*grid-row: 1;*/
   align-self: start;
   justify-self: end;
 }
@@ -137,7 +139,7 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 0px;
   width: 25px;
   height: 25px;
@@ -207,9 +209,7 @@
 .shadow_link:focus {
   text-decoration: none;
   outline: 1px solid #F1B2CE;
-  ;
 }
-
 
 .container_attention-tips {
   display: flex;
@@ -227,10 +227,43 @@
   font-weight: 400;
 }
 
+.image-gallery {
+  width: 100%;
+  max-height: 1400px;
+  height: auto;
+  min-height: 668px;
+  display: grid;
+  gap: 10px;
+}
+
 .image-gallery_container {
   display: grid;
-  flex-direction: column;
   gap: 10px;
+}
+
+.image_sunset {
+  width: 355px;
+  height: 142px;
+}
+
+.image_ice-cream {
+  width: 355px;
+  height: 355px;
+}
+
+.image_tape {
+  width: 355px;
+  height: 237px;
+}
+
+.image_books {
+  width: 355px;
+  height: 355px;
+}
+
+.image_street {
+  width: 355px;
+  height: 237px;
 }
 
 .image_sunset,
@@ -240,6 +273,7 @@
 .image_street {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .footer {
@@ -283,7 +317,25 @@
   }
 
   .header__theme-menu-list {
-    margin-top: 146px;
+    margin-top: 150px;
+  }
+
+  .decoration-text {
+    top: 22px;
+    right: 30px;
+  }
+
+  .decorated-zone::before {
+    top: 20px;
+  }
+
+  .decorated-zone::after {
+    bottom: 20px;
+  }
+
+  .decoration-text::after {
+    top: 8px;
+    right: -20px;
   }
 
   .pharagraph {
@@ -292,18 +344,30 @@
     align-self: center;
   }
 
+  .page__container {
+    gap: 60px;
+  }
+
+  .content {
+    gap: 80px;
+  }
+
   .why-focus-hard {
     display: grid;
     grid-template-columns: auto 1fr;
+    gap: 20px;
   }
 
   .list_attention {
     display: flex;
   }
 
-  .title_why-focus-hard,
+  .title_why-focus-hard {
+    width: 236px;
+  }
+
   .title_attention_problems {
-    width: clamp(200px, 25vw, 236px);
+    width: 135px;
   }
 
   .attention_tips {
@@ -332,21 +396,18 @@
   }
 
   .subtitle_attention-tips {
-    align-self: start;
+    align-self: stretch;
     min-height: min-content;
+  }
+
+  .image-gallery {
+    height: 823px;
   }
 
   .image-gallery_container {
     width: 100%;
     display: grid;
-    gap: 20px;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-
-  .image {
-    height: 100%;
-    width: 100%;
   }
 
   .image_sunset {
@@ -356,17 +417,19 @@
   .image_ice-cream {
     grid-row: span 2;
     object-fit: cover;
-
+    height: 492px;
   }
 
   .image_tape {
     grid-row: 2 / span 2;
     object-fit: cover;
+    height: 560px;
   }
 
   .image_street {
     grid-column: 2 / span 2;
     object-fit: cover;
+    height: 287px;
   }
 
   .title_footer {
@@ -409,20 +472,6 @@
     margin-top: 20px;
   }
 
-  .decoration-text {
-    top: 22px;
-    right: 30px;
-  }
-
-  .decorated-zone::before {
-    top: 20px;
-  }
-
-  .decoration-text::after {
-    top: 7px;
-    right: -20px;
-  }
-
   .title {
     font-size: 157px;
     align-self: center;
@@ -436,7 +485,7 @@
   }
 
   .content {
-    gap: 79px;
+    gap: 80px;
   }
 
   .title_why-focus-hard {
@@ -467,12 +516,39 @@
     gap: 20px;
   }
 
+  .image-gallery {
+    width: 100%;
+    gap: 20px;
+    height: 1091px;
+  }
+
   .image-gallery_container {
     width: 100%;
   }
 
-  .image-gallery {
-    width: 100%;
+  .image_sunset {
+    width: 650px;
+    height: 260px;
+  }
+
+  .image_ice-cream {
+    width: 318px;
+    height: 595px;
+  }
+
+  .image_tape {
+    width: 315px;
+    height: 768px;
+  }
+
+  .image_books {
+    width: 315px;
+    height: 315px;
+  }
+
+  .image_street {
+    width: 649px;
+    height: 433px;
   }
 
   .title_footer {
