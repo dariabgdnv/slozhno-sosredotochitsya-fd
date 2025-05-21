@@ -5,17 +5,37 @@
 
 /* Темная тема - основная */
 :root {
-  --accent-color: #FF0070;
-  --bg-color: #000028;
-  --bg-image: url("../images/cover-image-dark.png");
-  --text-color: #fff;
-  --secondary-text: #DB00FF;
-  --accent-color-text: #FF0070;
-  --font-main: 'IBM Plex mono', sans-serif;
-  --font-size-base: clamp(1, 125rem, 1, 125rem + 0vw, 1, 125rem);
-  --font-weight-base: 400;
-  --link-shadow: 2px 2px 0 #FF0070;
-  --title-shadow: 4px 4px 0 #FF0070;
-  --line-height-text: 23.4px;
-  --letter-spacing_main: 1.2px;
+    --bg-image: url("../images/cover-image-dark.png");
+    --bg-color: #000028;
+    --title-color: #DB00FF;
+    --subtitle-block-color: #FF0070;
+    --pharagraph-text-color: #000028;
+    --main-text-color: #F1B2CE;
+    --decor-text: #FF0070;
+    --theme-menu-button-color: #FF0070;
+    --outline-active: #FF0070;
+    --outline-hover: rgba(255, 0, 112, 0.4);
+    --outline-focus: #FF0070;
+    --accent-color: #FF0070;
+    --border-color: #FF0070;
+    --font-main: 'IBM Plex mono', sans-serif;
+    --font-size-base: clamp(1, 125rem, 1, 125rem + 0vw, 1, 125rem);
+    --font-weight-base: 400;
+    --link-shadow: 2px 2px 0 #FF0070;
+    --title-shadow: 4px 4px 0 #FF0070;
+    --line-height-text: 23.4px;
+    --letter-spacing-main: 1.2px;
 }
+
+/* :root.theme-light {
+  --bg-image: url("../images/cover-image-dark.png");
+  --bg-color: #FFF1F7;
+  --title-color: #FFC2E6;
+  --subtitle-block-color: #353430;
+  --pharagraph-text-color: #353430;
+  --main-text-color: #353430;
+  --decor-text: #FF8DCB;
+  --theme-menu-button-color: #353430;
+  --outline-active: #353430;
+  --outline-hover: rgba(50, 49, 45, 0.4);
+}*/
