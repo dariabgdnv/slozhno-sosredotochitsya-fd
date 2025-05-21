@@ -64,10 +64,6 @@
   border-bottom: 1px solid var(--outline-focus);
 }
 
-.header__theme-menu-button {
-  border: none;
-}
-
 .header__theme-menu-button_active {
   padding-left: 13px;
   padding-right: 13px;
@@ -402,12 +398,12 @@
   .image_ice-cream {
     grid-row: span 2;
     object-fit: cover;
-    height: 440px;
+    height: 435px;
   }
 
   .image_books {
     height: 230px;
-    width: 230px;
+    width: 236px;
   }
 
   .image_tape {
@@ -420,7 +416,7 @@
   .image_street {
     grid-column: 2 / span 2;
     object-fit: cover;
-    height: 318px;
+    height: 325px;
   }
 
   .title_footer {
@@ -522,16 +518,16 @@
 
   .image_ice-cream {
     width: 318px;
-    height: 595px;
+    height: 589px;
   }
 
   .image_tape {
     width: 315px;
-    height: 768px;
+    height: 763px;
   }
 
   .image_books {
-    width: 315px;
+    width: 318px;
     height: 315px;
   }
 
