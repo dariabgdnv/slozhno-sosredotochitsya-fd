@@ -42,7 +42,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 14px;
   color: var(--theme-menu-button-color);
   margin-top: 33px;
   align-items: center;
@@ -52,7 +52,8 @@
   color: var(--theme-menu-button-color);
   background-color: transparent;
   border: none;
-  letter-spacing: var(--letter-spacing-main);
+  font-size: var(--font-size-main);
+  padding: 0;
 }
 
 .header__theme-menu-button:hover {
@@ -101,6 +102,7 @@
   justify-self: end;
   color: var(--decor-text);
   align-self: start;
+  display: var(--decoration-text-display);
 }
 
 .decoration-text::after {
@@ -144,19 +146,18 @@
 .content {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 47px;
 }
 
 .text_attention {
   font-weight: var(--font-weight-base);
-  letter-spacing: var(--letter-spacing-main);
   color: var(--main-text-color);
+  font-size: var(--font-size-main);
 }
 
 .title_block,
 .subtitle_block {
-  font-size: var(--font-main);
-  letter-spacing: var(--letter-spacing-main);
+  font-size: var(--font-size-main);
 }
 
 .title_decor {
@@ -177,7 +178,7 @@
 .list_attention {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 22px;
 }
 
 .shadow_link {
@@ -198,18 +199,18 @@
   width: 100%;
   bottom: -1px;
   height: 1px;
-  background-color: #F1B2CE;
+  background-color: var(--shadow-link-hover-outline);
 }
 
 .shadow_link:focus {
   text-decoration: none;
-  outline: 1px solid #F1B2CE;
+  outline: var(--shadow-link-focus);
 }
 
 .container_attention-tips {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
 }
 
 .item_attention {
@@ -293,7 +294,6 @@
 
   .header {
     width: 100%;
-    /*height: 1024px;*/
     min-height: 1024px;
   }
 
@@ -333,7 +333,7 @@
   }
 
   .content {
-    gap: 80px;
+    gap: 77px;
   }
 
   .why-focus-hard {
@@ -359,10 +359,10 @@
     grid-template-columns: min-content 1fr;
   }
 
-  .container_attention_tips {
+  .container_attention-tips {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 17px;
   }
 
   .title_attention-tips {
@@ -381,43 +381,40 @@
   }
 
   .image-gallery {
-    height: 823px;
-    gap: 22px;
+    gap: 20px;
   }
 
   .image-gallery_container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: min-content;
+    gap: 20px;
   }
 
   .image_sunset {
     grid-column: 1 / span 2;
+    height: 190px;
   }
 
   .image_ice-cream {
     grid-row: span 2;
-    object-fit: cover;
-    height: 435px;
+    height: 442px;
   }
 
   .image_books {
     height: 230px;
-    width: 236px;
   }
 
   .image_tape {
     grid-row: 2 / span 2;
-    object-fit: cover;
     height: 568px;
-    width: 229px;
   }
 
   .image_street {
     grid-column: 2 / span 2;
-    object-fit: cover;
-    height: 325px;
-  }
+    height: 318px;
+    }
 
   .title_footer {
     align-self: center;
@@ -434,7 +431,6 @@
   }
 
   .header {
-    width: 100%;
     max-width: 1024px;
     align-items: center;
     position: relative;
@@ -453,20 +449,23 @@
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 30px;
     justify-content: center;
     margin-top: 20px;
+    margin-left: 14px;
+  }
+
+  .header__theme-menu-button_active {
+    padding: 0 12px 0 12px;
   }
 
   .title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     align-self: center;
-    justify-self: start;
   }
 
   .pharagraph {
     width: 491px;
-    justify-self: end;
   }
 
   .content {
@@ -501,43 +500,41 @@
     gap: 20px;
   }
 
+  .item_attention {
+    gap: 9px;
+  }
+  
   .image-gallery {
-    width: 100%;
+    height: 1048px;
     gap: 20px;
-    height: 1091px;
   }
 
   .image-gallery_container {
-    width: 100%;
+    gap: 20px;
   }
 
   .image_sunset {
-    width: 650px;
     height: 260px;
   }
 
   .image_ice-cream {
-    width: 318px;
     height: 589px;
   }
 
   .image_tape {
-    width: 315px;
     height: 763px;
   }
 
   .image_books {
-    width: 318px;
     height: 315px;
   }
 
   .image_street {
-    width: 649px;
     height: 433px;
   }
 
-  .title_footer {
-    justify-self: center;
+  .footer {
+    margin-top: 40px;
   }
-}
 
+}

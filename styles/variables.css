@@ -20,11 +20,14 @@
     --border-color: #FF0070;
     --font-main: 'IBM Plex mono', sans-serif;
     --font-size-base: clamp(1, 125rem, 1, 125rem + 0vw, 1, 125rem);
+    --font-size-main: 18px;
     --font-weight-base: 400;
     --link-shadow: 2px 2px 0 #FF0070;
     --title-shadow: 4px 4px 0 #FF0070;
     --line-height-text: 23.4px;
-    --letter-spacing-main: 1.2px;
+    --decoration-text-display: block;
+    --shadow-link-focus: 1px solid #F1B2CE;
+    --shadow-link-hover-outline: #F1B2CE;
 }
 
 /* :root.theme-light {

@@ -19,6 +19,9 @@
   --outline-hover: rgba(50, 49, 45, 0.4);
   --outline-focus: #353430;
   --border-color: #353430;
+  --decoration-text-display: none;
+  --shadow-link-focus: 1px solid #353430;
+  --shadow-link-hover-outline: #353430;
 }
 
 /* Вам также нужно будет написать ряд подобных селекторов */
@@ -28,12 +31,12 @@
   color: var(--main-text-color);
 }
 
-.theme-light .title {
+.title {
   color: var(--title-color);
   text-shadow: var(--title-shadow);
 }
 
-.theme-light .decoration-text {
+ .decoration-text {
   display: none;
 }
 
@@ -47,7 +50,7 @@
   border-left: 1px solid var(--color_border);
 }
 
-.theme-light .title_decor {
+.title_decor {
   color: var(--main-text-color);
   background-color: var(--decor-text);
 }
@@ -56,19 +59,19 @@
   color: var(--main-text-color);
 }
 
-.theme-light .header__theme-menu-button_type_dark {
+.header__theme-menu-button_type_dark {
   border: none;
 }
 
-.theme-light .header__theme-menu-button_type_light {
+.header__theme-menu-button_type_light {
   border: 1px solid var(--outline-active);
 }
 
-.theme-light .header__theme-menu-button:hover {
+.header__theme-menu-button:hover {
   outline: 1px solid var(--outline-hover);
 }
 
-.theme-light .header__theme-menu-button:focus {
+.header__theme-menu-button:focus {
   outline: none;
   border-bottom: 1px solid var(--outline-focus);
 }
@@ -77,15 +80,15 @@
   color: var(--pharagraph-text-color);
 }
 
-.theme-light .text_attention {
+.text_attention {
   color: var(--main-text-color);
 }
 
-.theme-light .shadow_link {
+.shadow_link {
   color: var(--main-text-color);
 }
 
-.theme-light .title_accent {
+.title_accent {
   color: var(--subtitle-block-color);
 }
 
@@ -99,11 +102,11 @@
 }
 
 .shadow_link:hover::after {
-  background-color: var(--color_border);
+  background-color: var(--outline-hover);
 }
 
 .shadow_link:focus {
-  outline: 1px solid var(--color_border);
+  outline: 1px solid var(--outline-focus);
 }
 
 @media (prefers-color-scheme: light) {
@@ -122,10 +125,12 @@
     --outline-hover: rgba(50, 49, 45, 0.4);
     --outline-focus: #353430;
     --border-color: #353430;
+    --decoration-text-display: none;
+    --shadow-link-focus: 1px solid #353430;
+    --shadow-link-hover-outline: #353430;
   }
 
   .decoration-text {
-    display: none;
+    display: var(--decoration-text-display);
   }
 }
-
