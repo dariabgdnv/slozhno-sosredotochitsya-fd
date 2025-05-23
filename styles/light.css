@@ -84,10 +84,6 @@
   color: var(--main-text-color);
 }
 
-.shadow_link {
-  color: var(--main-text-color);
-}
-
 .title_accent {
   color: var(--subtitle-block-color);
 }
