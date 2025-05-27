@@ -11,6 +11,7 @@
     --title-color: #DB00FF;
     --subtitle-block-color: #FF0070;
     --pharagraph-text-color: #000028;
+    --title-item: #000028;
     --main-text-color: #F1B2CE;
     --decor-text: #FF0070;
     --theme-menu-button-color: #FF0070;
@@ -33,3 +34,5 @@
 .decoration-text {
   display: var(--decoration-text-display);
 }
+
+

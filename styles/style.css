@@ -160,6 +160,10 @@
   font-size: var(--font-size-main);
 }
 
+.subtitle_block {
+  color: var(--title-item);
+}
+
 .title_decor {
   background-color: var(--decor-text);
   color: var(--pharagraph-text-color);
@@ -221,13 +225,13 @@
 
 .title_item {
   font-weight: 400;
+  color: var(--title-item);
 }
 
 .image-gallery {
   width: 100%;
-  max-height: 1400px;
+  /*max-height: 1400px;*/
   height: auto;
-  min-height: 668px;
   display: grid;
   gap: 10px;
 }
@@ -518,7 +522,7 @@
   }
 
   .image_ice-cream {
-    height: 589px;
+    height: 595px;
   }
 
   .image_tape {
@@ -530,7 +534,7 @@
   }
 
   .image_street {
-    height: 433px;
+    height: 428px;
   }
 
   .footer {

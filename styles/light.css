@@ -10,6 +10,7 @@
   --title-color: #FFC2E6;
   --subtitle-block-color: #353430;
   --pharagraph-text-color: #353430;
+  --title-item: #353430;
   --main-text-color: #353430;
   --decor-text: #FF8DCB;
   --title-shadow: 4px 4px 0 #FF8DCB;
@@ -22,87 +23,6 @@
   --decoration-text-display: none;
   --shadow-link-focus: 1px solid #353430;
   --shadow-link-hover-outline: #353430;
-}
-
-/* Вам также нужно будет написать ряд подобных селекторов */
-.page {
-  background-color: var(--bg-color);
-  background-image: var(--bg-image);
-  color: var(--main-text-color);
-}
-
-.title {
-  color: var(--title-color);
-  text-shadow: var(--title-shadow);
-}
-
- .decoration-text {
-  display: none;
-}
-
-.decorated-zone::before {
-  border-top: 1px solid var(--color_border);
-  border-right: 1px solid var(--color_border);
-}
-
-.decorated-zone::after {
-  border-bottom: 1px solid var(--color_border);
-  border-left: 1px solid var(--color_border);
-}
-
-.title_decor {
-  color: var(--main-text-color);
-  background-color: var(--decor-text);
-}
-
-.header__theme-menu-button {
-  color: var(--main-text-color);
-}
-
-.header__theme-menu-button_type_dark {
-  border: none;
-}
-
-.header__theme-menu-button_type_light {
-  border: 1px solid var(--outline-active);
-}
-
-.header__theme-menu-button:hover {
-  outline: 1px solid var(--outline-hover);
-}
-
-.header__theme-menu-button:focus {
-  outline: none;
-  border-bottom: 1px solid var(--outline-focus);
-}
-
-.pharagraph {
-  color: var(--pharagraph-text-color);
-}
-
-.text_attention {
-  color: var(--main-text-color);
-}
-
-.title_accent {
-  color: var(--subtitle-block-color);
-}
-
-.subtitle_block {
-  color: var(--main-text-color);
-}
-
-.shadow_link {
-  color: var(--link-color);
-  text-shadow: var(--link-shadow);
-}
-
-.shadow_link:hover::after {
-  background-color: var(--outline-hover);
-}
-
-.shadow_link:focus {
-  outline: 1px solid var(--outline-focus);
 }
 
 @media (prefers-color-scheme: light) {
@@ -124,6 +44,10 @@
     --decoration-text-display: none;
     --shadow-link-focus: 1px solid #353430;
     --shadow-link-hover-outline: #353430;
+  }
+
+  .header__theme-menu-button {
+    color: var(--theme-menu-button-color)
   }
 
   .decoration-text {
