@@ -28,7 +28,7 @@
 }
 
 .header__theme-menu-button {
-  color: var(--accent-color);
+  color: var(--theme-menu-button-color);
 }
 
 .decoration-text {
